@@ -12,7 +12,7 @@
     <artifactId>mall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mall</name>
-    <description>修改</description>
+    <description>shopping product practice onself</description>
 
     <properties>
         <java.version>1.8</java.version>
