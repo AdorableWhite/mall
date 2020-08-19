@@ -1,6 +1,27 @@
 server:
-  port: 10086
+  port: 10087
 
+# 日志打印级别
 logging:
   level:
     com.taizilibai.mall: debug
+
+spring:
+  redis:
+    host: 39.97.64.54
+    port: 6379
+    # 数据索引，默认为0
+    database: 0
+    lettuce:
+      pool:
+        # 连接池最大连接数（负值表示无限制） 默认8
+        max-active: 8
+        # 最大连接阻塞等待时间（负值表示无限制） 默认-1
+        max-wait: -1
+        # 最大空闲连接
+        max-idle: 8
+        # 最小空闲连接
+        min-idle: 0
+
+
+

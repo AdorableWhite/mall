@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <redis.version>2.3.3.RELEASE</redis.version>
+        <common.pool2.version>2.8.0</common.pool2.version>
     </properties>
 
     <dependencies>
@@ -35,6 +37,25 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${redis.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-pool2 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>${common.pool2.version}</version>
+        </dependency>
+
+
+
+
     </dependencies>
 
     <build>
