@@ -1,5 +1,6 @@
 package com.taizilibai.mall.controller;
 
+import com.taizilibai.mall.exception.BizException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -35,5 +36,11 @@ public class CacheController {
         redisTemplate.opsForValue().set("name", "zhangsan");
 
         return "调用成功";
+    }
+
+
+    @GetMapping("/exceptionThrow")
+    public void exceptionThrow(){
+        throw new BizException();
     }
 }
