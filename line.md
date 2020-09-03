@@ -6,6 +6,8 @@ bot_prompt = aggressive
 
 
 
+
+
 #### 2. 消息发送 API
 
  https://developers.line.biz/en/docs/messaging-api/sending-messages/#push-messages
@@ -69,13 +71,15 @@ https://developers.line.biz/en/reference/messaging-api/#buttons
 
 #### 6. 消息统计和预警
 
-- 获取当月消息余额    https://developers.line.biz/en/reference/messaging-api/#get-quota
+- 获取当月消息余额（需设定目标限制）    https://developers.line.biz/en/reference/messaging-api/#get-quota
 
-- 获取当月消息发送数量     https://developers.line.biz/en/reference/messaging-api/#get-consumption
+- 获取当月消息发送数量（获取的为近似值）     https://developers.line.biz/en/reference/messaging-api/#get-consumption
 
 - 统计昨日的消息到达数(overview.delivered) 、 消息查看数(overview.uniquelmpression)、 消息点击数(overview.uniqueClick) ，
 
-   https://developers.ine.biz/en/reference/messaging-api/#get-message-event
+   https://developers.line.biz/en/reference/messaging-api/#get-message-event
+
+   （接口或许不可用）
 
 - 上午9点，发送消息到统计邮箱列表
 
@@ -92,4 +96,6 @@ https://developers.line.biz/en/reference/messaging-api/#buttons
   昨日消息查看数: 234
 
   昨日消息点击数: 111
+
+邮箱列表是否固定
 
