@@ -19,7 +19,8 @@ public class MallApplication {
     }
 
     public static void main(String[] args) {
-//        SpringApplication.run(MallApplication.class, args);
+        SpringApplication.run(MallApplication.class, args);
+/*
 
         TcpClient c1 = new TcpClient() {
 
@@ -82,6 +83,7 @@ public class MallApplication {
             }
             delay();
         }
+*/
 
 
     }
