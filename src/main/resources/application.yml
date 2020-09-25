@@ -7,6 +7,14 @@ logging:
     com.taizilibai.mall: debug
 
 spring:
+  rabbitmq:
+    host: 39.97.64.54
+    port: 5672
+    virtual-host: /
+    username: admin
+    password: admin
+    publisher-confirm-type: SIMPLE
+    publisher-returns: true # 消息发送到队列确认
   redis:
     host: 39.97.64.54
     port: 6379

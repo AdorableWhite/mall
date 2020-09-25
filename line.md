@@ -14,7 +14,13 @@ bot_prompt = aggressive
 
 用 sent to a single user
 
+notificationDisabled=false
+
 订单状态改变为finish5需推送
+
+
+
+{"message":"The request body has 1 error(s)","details":[{"message":"Must be one of the following values: [text, image, video, audio, location, 贴图 sticker,模板 template, imagemap, 弹性消息 flex]","property":"messages[1].type"}]}
 
 
 
@@ -64,11 +70,13 @@ https://developers.line.biz/en/reference/messaging-api/#buttons
   结束:
   
   2020/07/15 14:34:11. 上品快餐
-  
+  Button:
+  查看详情
+
   ```
 
   
-
+  
   
 
 #### 6. 消息统计和预警
@@ -106,8 +114,8 @@ payLoad:
   "iss": "1654800078",
   "sub": "1654800078",
   "aud": "https://api.line.me/",
-  "exp": 1600328367331,
-  "token_exp": 6400
+  "exp": 1600398463,
+  "token_exp": 2592000
 }
 ```
 
@@ -115,7 +123,9 @@ payLoad:
 
 
 
+- 获取channelAccessToken
 
+  https://developers.line.biz/en/reference/messaging-api/#oauth
 
 - 获取当月消息余额（需设定目标限制）    https://developers.line.biz/en/reference/messaging-api/#get-quota
 
@@ -144,4 +154,37 @@ payLoad:
   昨日消息点击数: 111
 
 邮箱列表是否固定
+
+
+
+curl -x socks5://127.0.0.1:1080 -X GET http://www.google.com
+
+```sh
+curl -x 127.0.0.1:1080 -k -X curl -X POST https://api.line.me/oauth2/v2.1/token -H 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'grant_type=client_credentials' --data-urlencode 'client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer' --data-urlencode 'client_assertion=eyJhbGciOiJSUzI1NiIsImtpZCI6ImYwMDM2MTk1LWMzZDMtNGJlYi1hZTAwLWQ1YTk1MzEwMTQxYiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDA2NTU5MjgsImlzcyI6IjE2NTQ4MDAwNzgiLCJzdWIiOiIxNjU0ODAwMDc4IiwiYXVkIjoiaHR0cHM6Ly9hcGkubGluZS5tZS8iLCJ0b2tlbl9leHAiOjg2NDAwfQ.dRcLJKkvTB4MDEaL5iEiLg9Svr43Pv88LVnyPsw70ev5wE1kYAWAFqc53RbmIV8XnQqWGe7GXBD6cOgrjkcYKOm1pxaVz4Wa01la8bXs5-YokCwOVzhCQM-2BrQW4aQ1ownG717YvwCNN7juB9N9s2EhYRGGnbDxl2ADHhsf3MnqVKH93TXcVGpQZYrqVMAkvi74m2gS9IJgrg1M1Wwxt3NXnom0UGMuMtbxux44zmXp2i2ErDfT-YqPsCNt7kRTP5yS7NhOaIy4BzpG7oUWNXx8E1R_0z7uF5MKj7QmX_AdCJQJ3DiqRUfx1StDVJHrlAYbLqDh_vu7KcTwZ820HA'
+```
+
+```java
+{
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.m0FwZbT9MNPTf_ZP1gPHhiVWD3kGtOjihkjuyAN2s8pgj7bRxnAaAj0I-FThb4RmBokghllO6ldUqka_1Alh6obABGfotMTb6C6-7a5kk0_Y_viT6sont4gDgBLu1qfc.LMAOn2KblXgeP5Ad4WM3I7ugnTFz8haNGCnBhW7EQ9E",
+    "token_type": "Bearer",
+    "expires_in": 86400,
+    "key_id": "oI5t5nVaspWA_OL_2sdX5w"
+}
+```
+
+eyJhbGciOiJIUzI1NiJ9.1gXR6dKiklackMF4Ni3MutZxLMME9GC1Ok9TSBS9H_5RXYN40qaRAmYA9e54H21i2kQRg9THmaI1iCxlXXN3eJQwKuOrLydptkU0Dj_c2qMTHmIc8WHladEssyxoBNz3.6zP750XywGIhTo9W3tAakf0NfeqVrd6Z6leg8DuHB5s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
