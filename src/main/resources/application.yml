@@ -1,55 +1,7 @@
-server:
-  port: 10087
-
-# 日志打印级别
-logging:
-  level:
-    com.taizilibai.mall: debug
-
 spring:
-  rabbitmq:
-    host: 39.97.64.54
-    port: 5672
-    virtual-host: /
-    username: admin
-    password: admin
-    publisher-confirm-type: SIMPLE
-    publisher-returns: true # 消息发送到队列确认
-  redis:
-    host: 39.97.64.54
-    port: 6379
-    # 数据索引，默认为0
-    database: 0
-    lettuce:
-      pool:
-        # 连接池最大连接数（负值表示无限制） 默认8
-        max-active: 8
-        # 最大连接阻塞等待时间（负值表示无限制） 默认-1
-        max-wait: -1
-        # 最大空闲连接
-        max-idle: 8
-        # 最小空闲连接
-        min-idle: 0
+  profiles:
+    active: @profileActive@
   messages:
     encoding: UTF-8
-  mail:
-    #smtp服务主机  qq邮箱则为smtp.qq.com
-    host: smtp.163.com
-    #服务协议
-    protocol: smtp
-    # 编码集
-    default-encoding: UTF-8
-    #发送邮件的账户
-    username: 15922028322@163.com
-    #授权码
-    password: LXSHSTUVMPOBQXYH
-    test-connection: true
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-            required: true
 
 
