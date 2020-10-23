@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @Description:
- * @Author: zxx
  * @Date: 2020/8/20 11:31
  */
 @RestControllerAdvice

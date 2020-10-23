@@ -11,7 +11,6 @@ import javax.annotation.Resource;
 
 /**
  * @Description:
- * @Author: zxx
  * @Date: 2020/9/22 19:51
  */
 public class SimpleSender {

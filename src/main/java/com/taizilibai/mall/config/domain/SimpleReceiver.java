@@ -7,7 +7,6 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
 /**
  * @Description:
- * @Author: zxx
  * @Date: 2020/9/22 19:54
  */
 @RabbitListener(queues = "simple.hello")
