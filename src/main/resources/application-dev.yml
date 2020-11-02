@@ -24,25 +24,25 @@ spring:
         # 最小空闲连接
         min-idle: 0
 
-  mail:
-    #smtp服务主机  qq邮箱则为smtp.qq.com
-    host: smtp.163.com
-    #服务协议
-    protocol: smtp
-    # 编码集
-    default-encoding: UTF-8
-    #发送邮件的账户
-    username: 15922028322@163.com
-    #授权码
-    password: RPTMFVNVRYOXTPWC
-    test-connection: true
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-            required: true
+#  mail:
+#    #smtp服务主机  qq邮箱则为smtp.qq.com
+#    host: smtp.163.com
+#    #服务协议
+#    protocol: smtp
+#    # 编码集
+#    default-encoding: UTF-8
+#    #发送邮件的账户
+#    username: 15922028322@163.com
+#    #授权码
+#    password: RPTMFVNVRYOXTPWC
+#    test-connection: true
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#            required: true
 
 server:
   port: 8089

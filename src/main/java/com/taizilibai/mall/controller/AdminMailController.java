@@ -21,10 +21,10 @@ import java.time.LocalDate;
 public class AdminMailController {
 
 
-    @Resource
-    private JavaMailSender javaMailSender;
+//    @Resource
+//    private JavaMailSender javaMailSender;
 
-    @GetMapping("/send")
+    /*@GetMapping("/send")
     public void testMailSend() {
         //创建简单邮件消息
         SimpleMailMessage message = new SimpleMailMessage();
@@ -65,5 +65,5 @@ public class AdminMailController {
             e.printStackTrace();
         }
 
-    }
+    }*/
 }
