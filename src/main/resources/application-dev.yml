@@ -47,6 +47,12 @@ spring:
 server:
   port: 8089
 
+
+jwt:
+  secret: X-Instpower-Token-dev
+  issuser: instpower
+  subject: this is instpower token
+  audience: MINIAPP
 #logging:
 #  level:
 #    root:  ERROR

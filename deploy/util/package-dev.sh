@@ -6,7 +6,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cd $DIR/../..
-MALL_HOME=/home/mall
+MALL_HOME=/var/jenkins_home/workspace/mall/mall-dev/target/mall-0.0.1-SNAPSHOT.jar
 #echo "MALL_HOME $ADMINSTPOWER_HOMEIN_HOME"
 
 #cd $INSTPOWER_HOME/instpower-admin-web
