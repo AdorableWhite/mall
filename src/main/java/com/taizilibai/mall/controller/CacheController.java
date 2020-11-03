@@ -38,6 +38,15 @@ public class CacheController {
         return "调用成功";
     }
 
+    @GetMapping("/douguohua")
+    public User douguohua(){
+        User user = new User();
+        user.setSex(true);
+        user.setName("豆国华");
+        user.setAge(25);
+
+        return user;
+    }
 
     @GetMapping("/exceptionThrow")
     public void exceptionThrow(){
