@@ -2,6 +2,7 @@ package com.taizilibai.mall.controller;
 
 import com.taizilibai.mall.exception.BizException;
 import org.slf4j.Logger;
+import com.taizilibai.mall.domain.User;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
