@@ -1,5 +1,6 @@
 package com.taizilibai.mall.controller;
 
+import com.taizilibai.mall.domain.User;
 import com.taizilibai.mall.exception.BizException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +38,17 @@ public class CacheController {
 
         return "调用成功";
     }
+
+    @GetMapping("/douguohua")
+    public User douguohua(){
+        User user = new User();
+        user.setSex(true);
+        user.setName("豆国华");
+        user.setAge(25);
+
+        return user;
+    }
+
 
 
     @GetMapping("/exceptionThrow")
