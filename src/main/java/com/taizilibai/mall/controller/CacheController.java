@@ -52,6 +52,8 @@ public class CacheController {
 
 
 
+
+
     @GetMapping("/exceptionThrow")
     public void exceptionThrow(){
         throw new BizException();
