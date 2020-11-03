@@ -30,6 +30,13 @@ public class CacheController {
         logger.trace("---api入口 [{}]", "trace");
         return "调用成功";
     }
+    
+     @GetMapping("/redistest")
+    public String redistest(){
+        redisTemplate.opsForValue().set("name", "zhangsan");
+
+        return "调用成功";
+    }
 
     @GetMapping("/redistest")
     public String redistest(){
