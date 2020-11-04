@@ -41,7 +41,7 @@ public class CacheController {
         return "调用成功";
     }
 
-    @GetMapping("/douguohua")
+    @GetMapping("/doubi")
     public User douguohua(){
         User user = new User();
         user.setSex(true);
