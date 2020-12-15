@@ -1,0 +1,24 @@
+###动态规划 dynamic programming
+
+一般形式：求最值问题
+
+核心：穷举
+
+三要素： 重叠子问题、最优子结构、状态转移方程
+
+套用框架：
+```java
+public class dynamicProgramming {
+    public void test() {
+        // 初始化 base case
+        dp[0][0][...] = base
+        // 状态转移
+        for(status1 : status1All)
+            for(status2 : status2All)
+                for(...)
+                    dp[status1][status2][...] = 求最值（选择1，选择2，...）;
+    }
+}
+```
+
+
