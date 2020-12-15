@@ -1,5 +1,4 @@
 package com.taizilibai.mall.dynamic;
-package com.taizilibai.mall.dynamic;
 
 import org.junit.jupiter.api.Test;
 
