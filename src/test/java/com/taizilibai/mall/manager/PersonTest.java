@@ -206,7 +206,7 @@ class PersonTest {
     }
     @Test
     public void traverse() {
-        TreeNode root = new TreeNode(2);
+        TreeNode root = new TreeNode(3);
 
     }
 
