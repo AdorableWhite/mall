@@ -206,8 +206,31 @@ class PersonTest {
     }
     @Test
     public void traverse() {
-        TreeNode root = new TreeNode(4);
+        int[][] nums=new int[][]{{1,3},{1,2},{4,5},{3,7}};
+        //方法一
+        Arrays.sort(nums,new Comparator<int[]>(){
+            @Override
+            public int compare(int[] a,int[] b){
+                if(a[0]==b[0]){
+                    return a[1]-b[1];
+                }else{
+                    return a[0]-b[0];
+                }
+            }
+        });
 
+
+        // 方法二，使用匿名表达式
+        // (a,b)->a[1]-b[1]会自动转变成上面的形式
+//        Arrays.sort(nums,(a,b)->a[1]-b[1]);
+        for (int[] num : nums) {
+            System.out.println(Arrays.toString(num));
+        }
+
+        int[] a={2,5,4,3,1,8};
+        Arrays.sort(a,2,5);
+        System.out.println(Arrays.toString(a));
     }
+
 
 }
